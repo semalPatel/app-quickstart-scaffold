@@ -5,7 +5,7 @@ object Versions {
     const val coreKtxVersion = "1.9.0"
     const val activityVersion = "1.7.0"
     const val constraintLayoutVersion = "2.1.4"
-    const val materialVersion = "1.10.0-alpha01"
+    const val materialVersion = "1.8.0"
     const val coroutinesVersion = "1.7.0-Beta"
     const val glideVersion = "4.15.1"
     const val retrofitVersion = "2.9.0"

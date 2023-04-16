@@ -20,6 +20,7 @@ android {
     }
 
     buildFeatures {
+        viewBinding = true
         dataBinding = true
     }
 
@@ -38,12 +39,15 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    packaging {
+        resources.excludes.add("META-INF/versions/9/previous-compilation-data.bin")
+    }
 }
 
 dependencies {
     implementation(Libs.retrofit)
     implementation(Libs.kotlinStdLib)
-    implementation(Libs.coroutinesCore)
     implementation(Libs.coroutinesAndroid)
     implementation(Libs.coreKtx)
     implementation(Libs.material)

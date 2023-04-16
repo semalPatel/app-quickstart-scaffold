@@ -16,6 +16,7 @@ buildscript {
 }
 
 plugins {
+    kotlin("jvm") version Versions.kotlinVersion
     id("com.google.dagger.hilt.android") version Versions.hiltVersion apply false
 }
 
