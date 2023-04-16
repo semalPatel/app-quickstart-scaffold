@@ -1,21 +1,23 @@
+import AppConfig
+import Versions
 
 plugins {
     id("com.android.application")
-    id("kotlin-parcelize")
     kotlin("android")
     kotlin("plugin.serialization") version Versions.kotlinVersion
 }
 
 android {
-    compileSdkVersion(AppConfig.COMPILE_SDK_VERSION)
-    buildToolsVersion(Versions.buildToolsVersion)
+    namespace = AppConfig.APPLICATION_ID
+    compileSdk = AppConfig.COMPILE_SDK_VERSION
+    buildToolsVersion = Versions.buildToolsVersion
 
     defaultConfig {
-        applicationId(AppConfig.APPLICATION_ID)
-        minSdkVersion(AppConfig.MIN_SDK_VERSION)
-        targetSdkVersion(AppConfig.TARGET_SDK_VERSION)
-        versionCode(AppConfig.VERSION_CODE)
-        versionName(AppConfig.VERSION_NAME)
+        applicationId = AppConfig.APPLICATION_ID
+        minSdk = AppConfig.MIN_SDK_VERSION
+        targetSdk = AppConfig.TARGET_SDK_VERSION
+        versionCode = AppConfig.VERSION_CODE
+        versionName = AppConfig.VERSION_NAME
     }
 
     buildTypes {
@@ -41,7 +43,6 @@ dependencies {
     implementation(Libs.coroutinesCore)
     implementation(Libs.coroutinesAndroid)
     implementation(Libs.coreKtx)
-    implementation(Libs.appCompat)
     implementation(Libs.material)
     implementation(Libs.constraintLayout)
     testImplementation(Libs.junit)
