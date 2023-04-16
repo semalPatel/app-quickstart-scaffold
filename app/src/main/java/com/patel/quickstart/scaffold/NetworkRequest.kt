@@ -1,4 +1,4 @@
-package com.browse.mivi
+package com.patel.quickstart.scaffold
 
 import kotlin.coroutines.resume
 import kotlin.coroutines.suspendCoroutine

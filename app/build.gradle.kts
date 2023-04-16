@@ -10,7 +10,6 @@ plugins {
 android {
     namespace = AppConfig.APPLICATION_ID
     compileSdk = AppConfig.COMPILE_SDK_VERSION
-    buildToolsVersion = Versions.buildToolsVersion
 
     defaultConfig {
         applicationId = AppConfig.APPLICATION_ID
