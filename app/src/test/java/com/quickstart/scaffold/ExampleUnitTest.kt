@@ -1,4 +1,4 @@
-package com.browse.mivi
+package com.quickstart.scaffold
 
 import org.junit.Test
 
