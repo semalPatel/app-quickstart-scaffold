@@ -15,6 +15,10 @@ buildscript {
     }
 }
 
+plugins {
+    id("com.google.dagger.hilt.android") version Versions.hiltVersion apply false
+}
+
 allprojects {
     repositories {
         gradlePluginPortal()
